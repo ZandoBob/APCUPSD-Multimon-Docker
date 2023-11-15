@@ -1,4 +1,4 @@
-FROM httpd:alpine
+FROM httpd
 RUN apk add --no-cache apcupsd-webif
 COPY ./httpd.conf /usr/local/apache2/conf/httpd.conf
 COPY ./apcupsd.css /etc/apcupsd/apcupsd.css
